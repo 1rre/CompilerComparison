@@ -17,12 +17,12 @@ The sample programs also support a subset of Scala (only ints, no functions, var
 TODO: Write Description
 
 === Running
-Using the mill script (todo: include mill script), run `./mill _.run` (`./mill.bat _.run` on windows?) in the link:[./Scala] directory.
+Using the mill script (todo: include mill script), run `./mill _.run` (`./mill.bat _.run` on windows?) in the link:Scala[Scala] directory.
 
 == Erlang (Leex & Yecc)
 TODO: Write Description
 
-With Erlang installed (available from all package managers I've seen & on most architectures), run `escript compiler.erl` in the link:[./Erlang] directory.
+With Erlang installed (available from all package managers I've seen & on most architectures), run `escript compiler.erl` in the link:Erlang[Erlang] directory.
 
 == C/C++ (Flex & Yacc)
 TODO: Write Example
