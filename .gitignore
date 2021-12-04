@@ -1,0 +1,7 @@
+**/.vscode
+**/.metals/
+**/.bloop
+Scala/out
+Erlang/parser.erl
+Erlang/lexer.erl
+Erlang/**.beam

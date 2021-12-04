@@ -1,0 +1,46 @@
+= Comparison of different Parsers/Compiler Frameworks
+:source-highlighter: highlightjs
+
+== About
+Each framework is written to convert the following code sample from Scala to C:
+[source, scala]
+object Main extends App {
+  val y = (5 + 3) * 5;
+  val x = 10;
+  println(x + y);
+  return x + y * 2;
+}
+
+The sample programs also support a subset of Scala (only ints, no functions, variables & newlines don't act as semicolons), but are more designed to give a basic example of lexing, parsing and code generation from each.
+
+== Scala (Scala Parser Combinators)
+TODO: Write Description
+
+=== Running
+Using the mill script (todo: include mill script), run `./mill _.run` (`./mill.bat _.run` on windows?) in the link:[./Scala] directory.
+
+== Erlang (Leex & Yecc)
+TODO: Write Description
+
+With Erlang installed (available from all package managers I've seen & on most architectures), run `escript compiler.erl` in the link:[./Erlang] directory.
+
+== C/C++ (Flex & Yacc)
+TODO: Write Example
+
+== Haskell (Parsec)
+TODO: Write Example
+
+== Java (ANTLR)
+TODO: Write Example
+
+== Python (Lark or PLY)?
+TODO: Write Example
+
+== C# (Sprache)
+TODO: Write Example
+
+== JavaScript (PEGjs)
+TODO: Write Example
+
+== Others
+There are a huge number of other libraries you could use, the above are just a small sample from some popular languages. Feel free to find or even write your own library in your favourite language.
