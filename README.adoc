@@ -11,23 +11,30 @@ object Main extends App {
   return x + y * 2;
 }
 
-The sample programs also support a subset of Scala (only ints, no functions, variables & newlines don't act as semicolons), but are more designed to give a basic example of lexing, parsing and code generation from each.
+The sample programs also support a subset of Scala (only ints, no functions or variables ('val's are immutable) & newlines don't act as semicolons), but are more designed to give a basic example of lexing, parsing and code generation from each.
 
 == Scala (Scala Parser Combinators)
+=== About
 TODO: Write Description
 
-=== Running
+=== Running the Example
 Using the mill script (todo: include mill script), run `./mill _.run` (`./mill.bat _.run` on windows?) in the link:Scala[Scala] directory.
 
 == Erlang (Leex & Yecc)
+=== About
 TODO: Write Description
 
+=== Running the Example
 With Erlang installed (available from all package managers I've seen & on most architectures), run `escript compiler.erl` in the link:Erlang[Erlang] directory.
 
-== C/C++ (Flex & Yacc)
-TODO: Write Example
-
 == Haskell (Parsec)
+=== About
+TODO: Write Description
+
+=== Running the Example
+With Haskell (GHC & cabal) installed & running `cabal install --lib parsec`, run `ghc main`, followed by `./main` in the link:Haskell[Haskell] directory.
+
+== C/C++ (Flex & Yacc)
 TODO: Write Example
 
 == Java (ANTLR)

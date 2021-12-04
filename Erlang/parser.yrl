@@ -2,7 +2,7 @@ Nonterminals
   program add_sub div_mul lines line eol decl value.
 Terminals
   identifier object extends int intliteral val app return
-  '+' '-' '/' '*' '%' '(' ')' '{' '}' ':' '=' ';'.
+  '+' '-' '/' '*' '%' '(' ')' '{' '}' '=' ';'.
 
 Rootsymbol program.
 
@@ -21,8 +21,7 @@ line -> identifier '(' value ')' : {'$1', '$3'}.
 line -> val decl '=' value       : {decl, '$2', '$4'}.
 line -> return value             : {return, '$2'}.
 
-decl -> identifier         : '$1'. 
-decl -> identifier ':' int : '$1'.
+decl -> identifier         : '$1'.
 
 add_sub -> '+' : {op, '+'}.
 add_sub -> '-' : {op, '-'}.
